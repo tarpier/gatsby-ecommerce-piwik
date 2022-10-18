@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 import Header from '../Header';
 import Footer from '../Footer';
 import * as styles from './Layout.module.css';
+import PiwikPro from '@piwikpro/react-piwik-pro';
+
+PiwikPro.initialize(process.env.PIWIKID, process.env.PIWIKURL);
+
 
 // CSS not modular here to provide global styles
 import './Globals.css';
